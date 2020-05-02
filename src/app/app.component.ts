@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { FormGroup } from '@angular/forms';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'Forms-Reactive';
+  genders = ['male', 'female'];
+
+  // Creating the property that will contain our form, to create our form
+  signupForm: FormGroup;
+
 }
